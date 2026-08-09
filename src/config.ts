@@ -1,6 +1,6 @@
 /**
- * Update these when your GitHub repo + Releases are ready.
- * Download URL stays stable: always .../releases/latest/download/hes.apk
+ * Public download host: https://github.com/AbdulRehmanGHub/HES-WEB
+ * Stable APK URL: .../releases/latest/download/hes.apk
  */
 export const GITHUB_OWNER = 'AbdulRehmanGHub'
 export const GITHUB_REPO = 'HES-WEB'

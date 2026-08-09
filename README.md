@@ -43,7 +43,7 @@ Until media files exist, the page shows dashed placeholders.
 
 ## Pre-deploy checklist (do one by one)
 
-1. **Set GitHub user/repo in `src/config.ts`** — so Download button URL is real  
+1. **Set GitHub user/repo in `src/config.ts`** — DONE (`AbdulRehmanGHub` / `HES-WEB`)  
 2. **Upload `hes.apk` to a GitHub Release** — so Download actually works  
 3. **Deploy `hes-web` to GitHub Pages** — set `base` in `vite.config.ts` if needed (`/repo-name/`)  
 4. **Test on a real phone** — Urdu, videos, images, Download  
