@@ -1,0 +1,6 @@
+﻿Drop files here (exact names):
+
+images/admin.jpg           - maktab admin photo
+images/admin-teachers.jpg  - admin + teachers group photo
+videos/guide.mp4           - app guide video
+videos/features.mp4        - app features video

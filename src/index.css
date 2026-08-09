@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@theme {
+  --color-hes-primary: #1a5dc8;
+  --color-hes-primary-dark: #144a9e;
+  --color-hes-cyan: #3db8e8;
+  --color-hes-gold: #d4a843;
+  --color-hes-gold-light: #e8c56a;
+  --color-hes-btn: #b8922a;
+  --color-hes-btn-dark: #9a7a1f;
+  --color-hes-bg: #f3f4f6;
+  --color-hes-ink: #111827;
+  --color-hes-muted: #4b5563;
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", "Plus Jakarta Sans", ui-sans-serif, sans-serif;
+  --font-urdu: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-sans);
+  color: var(--color-hes-ink);
+  background-color: var(--color-hes-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Urdu: Jameel Noori Nastaleeq */
+html[lang="ur"] body,
+.font-urdu,
+.font-urdu .font-display,
+html[lang="ur"] h1,
+html[lang="ur"] h2,
+html[lang="ur"] h3,
+html[lang="ur"] button,
+html[lang="ur"] a,
+html[lang="ur"] p,
+html[lang="ur"] li,
+html[lang="ur"] span {
+  font-family: var(--font-urdu);
+}
+
+html[lang="ur"] body,
+.font-urdu {
+  font-size: 1.0625rem; /* ~17px — Nastaleeq reads small at default size */
+  line-height: 1.85;
+}
+
+html[lang="ur"] h1,
+.font-urdu h1 {
+  font-size: clamp(2.15rem, 4vw, 3rem);
+}
+
+html[lang="ur"] h2,
+.font-urdu h2 {
+  font-size: clamp(1.35rem, 2.5vw, 1.65rem);
+}
+
+html[lang="ur"] .text-sm,
+.font-urdu .text-sm {
+  font-size: 0.975rem;
+}
+
+html[lang="ur"] .text-xs,
+.font-urdu .text-xs {
+  font-size: 0.85rem;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--color-hes-primary) 25%, white);
+}
+
+.hero-logo-touch {
+  transition: transform 180ms ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.hero-logo-touch:hover {
+  transform: translateY(-3px);
+}
+
+.hero-logo-touch:active {
+  transform: translateY(2px) scale(0.98);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-logo-touch,
+  .hero-logo-touch:hover,
+  .hero-logo-touch:active {
+    transition: none;
+    transform: none;
+  }
+}
