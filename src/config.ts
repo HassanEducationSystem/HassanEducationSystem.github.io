@@ -15,17 +15,22 @@ export const CONTACT = {
   phone: '+923451027733',
 }
 
-/** Drop your files into these public paths */
+/** Respect Vite `base` so assets work on GitHub Pages (/HES-WEB/) */
+const asset = (path: string) =>
+  `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`
+
 export const MEDIA = {
-  adminPhoto: '/images/admin.webp',
-  adminGroupPhoto: '/images/adminwithteachers.webp',
-  hafizCeremony: '/images/hafiz-ceremony.webp',
-  adminOnStage: '/images/admin-on-stage.webp',
+  adminPhoto: asset('images/admin.webp'),
+  adminGroupPhoto: asset('images/adminwithteachers.webp'),
+  hafizCeremony: asset('images/hafiz-ceremony.webp'),
+  adminOnStage: asset('images/admin-on-stage.webp'),
   guideImages: [
-    '/images/img01.webp',
-    '/images/img02.webp',
-    '/images/img03.webp',
+    asset('images/img01.webp'),
+    asset('images/img02.webp'),
+    asset('images/img03.webp'),
   ] as const,
-  videoGuide: '/videos/guide.mp4',
-  videoFeatures: '/videos/complaints-guide.mp4',
+  videoGuide: asset('videos/guide.mp4'),
+  videoFeatures: asset('videos/complaints-guide.mp4'),
+  headerLogo: asset('images/hes_logo.png'),
+  heroLogo: asset('images/logo_with_bg.jpg'),
 }

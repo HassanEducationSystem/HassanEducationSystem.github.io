@@ -5,6 +5,6 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  // Set to '/REPO_NAME/' when deploying to GitHub project Pages
-  base: '/',
+  // GitHub Pages project site: https://abdulrehmanghub.github.io/HES-WEB/
+  base: '/HES-WEB/',
 })

@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { Menu, X } from 'lucide-react'
 import type { Lang } from '../i18n'
 import { copy } from '../i18n'
+import { MEDIA } from '../config'
 import { handleNavClick } from '../utils/smoothScroll'
 import { DownloadButton } from './DownloadButton'
 
@@ -40,7 +41,7 @@ export function Header({ lang, onToggleLang }: Props) {
           onClick={(e) => handleNavClick(e, '#top')}
         >
           <img
-            src="/images/hes_logo.png"
+            src={MEDIA.headerLogo}
             alt="HES"
             className="h-9 w-9 rounded-md object-cover sm:h-10 sm:w-10"
           />

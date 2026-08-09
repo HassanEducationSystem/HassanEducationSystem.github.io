@@ -17,7 +17,9 @@ npm install
 npm run dev
 ```
 
-Open the URL shown in the terminal (usually `http://localhost:5173`).
+Open the URL shown in the terminal. Because `base` is `/HES-WEB/` for GitHub Pages, local URL is usually:
+
+`http://localhost:5173/HES-WEB/`
 
 ## Config you will update later
 
@@ -44,9 +46,12 @@ Until media files exist, the page shows dashed placeholders.
 ## Pre-deploy checklist (do one by one)
 
 1. **Set GitHub user/repo in `src/config.ts`** — DONE (`AbdulRehmanGHub` / `HES-WEB`)  
-2. **Upload `hes.apk` to a GitHub Release** — so Download actually works  
-3. **Deploy `hes-web` to GitHub Pages** — set `base` in `vite.config.ts` if needed (`/repo-name/`)  
+2. **Upload `hes.apk` to a GitHub Release** — DONE (`v1.3.0` / `hes.apk`)  
+3. **Deploy `hes-web` to GitHub Pages** — workflow added; enable Pages (Source: GitHub Actions)  
 4. **Test on a real phone** — Urdu, videos, images, Download  
+
+Live site (after Pages is enabled): https://abdulrehmanghub.github.io/HES-WEB/  
+APK: https://github.com/AbdulRehmanGHub/HES-WEB/releases/latest/download/hes.apk
 
 Optional later: compress large gallery images; custom domain.
 

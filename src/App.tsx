@@ -84,7 +84,7 @@ function App() {
                 aria-label="HES logo"
               >
                 <img
-                  src="/images/logo_with_bg.jpg"
+                  src={MEDIA.heroLogo}
                   alt="Hassan Education System"
                   className="h-44 w-44 object-contain sm:h-52 sm:w-52"
                 />
