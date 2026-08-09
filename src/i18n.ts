@@ -66,7 +66,7 @@ export const copy = {
     guideImageAlt: 'Maktab guide',
     downloadTitle: 'Download',
     downloadBody:
-      'Get the latest Android build. File name on our release host is always hes.apk so the link stays the same.',
+      'Get the latest Android build for Hassan Education System. The download link stays the same when we update the app.',
     contactTitle: 'Contact',
     contactBody: 'Reach out on WhatsApp, email, or phone for help with HES.',
     whatsapp: 'WhatsApp',
@@ -141,7 +141,7 @@ export const copy = {
     guideImageAlt: 'مکتب گائیڈ',
     downloadTitle: 'ڈاؤن لوڈ',
     downloadBody:
-      'تازہ ترین اینڈرائیڈ بلڈ حاصل کریں۔ ریلیز فائل کا نام ہمیشہ hes.apk رہتا ہے تاکہ لنک تبدیل نہ ہو۔',
+      'حسان ایجوکیشن سسٹم کا تازہ ترین اینڈرائیڈ بلڈ حاصل کریں۔ ایپ اپڈیٹ ہونے پر بھی ڈاؤن لوڈ لنک ایک جیسا رہتا ہے۔',
     contactTitle: 'رابطہ',
     contactBody: 'HES کی مدد کے لیے واٹس ایپ، ای میل یا فون پر رابطہ کریں۔',
     whatsapp: 'واٹس ایپ',

@@ -18,6 +18,7 @@ export function DownloadButton({ label, size = 'lg', className = '' }: Props) {
   return (
     <a
       href={APK_DOWNLOAD_URL}
+      download="hes.apk"
       className={`inline-flex items-center justify-center rounded-lg bg-hes-primary text-white transition hover:bg-hes-primary-dark active:translate-y-px focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-hes-primary ${sizeClasses} ${className}`}
     >
       <AndroidIcon className={iconClass} />

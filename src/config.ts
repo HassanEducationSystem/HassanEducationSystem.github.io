@@ -1,13 +1,15 @@
 /**
- * Website (org Pages): https://hassaneducationsystem.github.io/
- * APK host (current Release): https://github.com/AbdulRehmanGHub/HES-WEB
- * Stable APK URL: .../releases/latest/download/hes.apk
+ * Website: https://hassaneducationsystem.github.io/
+ * APK: https://hassaneducationsystem.github.io/hes.apk
+ * (file lives in public/hes.apk — replace it when releasing a new version)
  */
-export const GITHUB_OWNER = 'AbdulRehmanGHub'
-export const GITHUB_REPO = 'HES-WEB'
+export const SITE_URL = 'https://hassaneducationsystem.github.io'
 
-export const APK_DOWNLOAD_URL =
-  `https://github.com/${GITHUB_OWNER}/${GITHUB_REPO}/releases/latest/download/hes.apk`
+/** Respect Vite `base` so assets work on GitHub Pages */
+const asset = (path: string) =>
+  `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`
+
+export const APK_DOWNLOAD_URL = asset('hes.apk')
 
 export const CONTACT = {
   whatsapp: '+923451027733',
@@ -15,10 +17,6 @@ export const CONTACT = {
   email: 'hassandaoud606@gmail.com',
   phone: '+923451027733',
 }
-
-/** Respect Vite `base` so assets work on GitHub Pages */
-const asset = (path: string) =>
-  `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`
 
 export const MEDIA = {
   adminPhoto: asset('images/admin.webp'),

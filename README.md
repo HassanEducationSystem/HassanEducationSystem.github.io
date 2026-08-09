@@ -45,7 +45,7 @@ Until media files exist, the page shows dashed placeholders.
 
 1. **Set GitHub user/repo in `src/config.ts`** — DONE (`AbdulRehmanGHub` / `HES-WEB`)  
 2. **Upload `hes.apk` to a GitHub Release** — DONE (`v1.3.0` / `hes.apk`)  
-3. **Deploy to org Pages** — org `HassanEducationSystem` + repo `HassanEducationSystem.github.io`  
+3. **Deploy to org Pages** — DONE (`https://hassaneducationsystem.github.io/`)  
 4. **Test on a real phone** — Urdu, videos, images, Download  
 
 ### Org Pages setup (new clean URL)
@@ -58,7 +58,14 @@ Until media files exist, the page shows dashed placeholders.
 5. Wait for the deploy workflow to finish  
 
 Live site: https://hassaneducationsystem.github.io/  
-APK (unchanged for now): https://github.com/AbdulRehmanGHub/HES-WEB/releases/latest/download/hes.apk
+APK: https://hassaneducationsystem.github.io/hes.apk  
+
+### Updating the APK
+
+1. Replace `public/hes.apk` with the new build (keep the same filename).  
+2. Bump `public/version.json`.  
+3. Commit and push `main` — Pages redeploys.  
+Download URL stays the same.
 
 Optional later: compress large gallery images; custom domain.
 
