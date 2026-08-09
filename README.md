@@ -17,9 +17,7 @@ npm install
 npm run dev
 ```
 
-Open the URL shown in the terminal. Because `base` is `/HES-WEB/` for GitHub Pages, local URL is usually:
-
-`http://localhost:5173/HES-WEB/`
+Open the URL shown in the terminal (usually `http://localhost:5173/`).
 
 ## Config you will update later
 
@@ -47,11 +45,20 @@ Until media files exist, the page shows dashed placeholders.
 
 1. **Set GitHub user/repo in `src/config.ts`** — DONE (`AbdulRehmanGHub` / `HES-WEB`)  
 2. **Upload `hes.apk` to a GitHub Release** — DONE (`v1.3.0` / `hes.apk`)  
-3. **Deploy `hes-web` to GitHub Pages** — workflow added; enable Pages (Source: GitHub Actions)  
+3. **Deploy to org Pages** — org `HassanEducationSystem` + repo `HassanEducationSystem.github.io`  
 4. **Test on a real phone** — Urdu, videos, images, Download  
 
-Live site (after Pages is enabled): https://abdulrehmanghub.github.io/HES-WEB/  
-APK: https://github.com/AbdulRehmanGHub/HES-WEB/releases/latest/download/hes.apk
+### Org Pages setup (new clean URL)
+
+1. Create organization: https://github.com/organizations/plan  
+   - Name: `HassanEducationSystem` (must be free)  
+2. Create a **public** repo named exactly: `HassanEducationSystem.github.io`  
+3. Push this `hes-web` project to that repo (`main`)  
+4. Repo → **Settings → Pages** → Source: **GitHub Actions**  
+5. Wait for the deploy workflow to finish  
+
+Live site: https://hassaneducationsystem.github.io/  
+APK (unchanged for now): https://github.com/AbdulRehmanGHub/HES-WEB/releases/latest/download/hes.apk
 
 Optional later: compress large gallery images; custom domain.
 

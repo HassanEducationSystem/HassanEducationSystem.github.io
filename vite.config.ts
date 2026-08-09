@@ -5,6 +5,6 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  // GitHub Pages project site: https://abdulrehmanghub.github.io/HES-WEB/
-  base: '/HES-WEB/',
+  // Org user site: https://hassaneducationsystem.github.io/
+  base: '/',
 })

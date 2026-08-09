@@ -1,5 +1,6 @@
 /**
- * Public download host: https://github.com/AbdulRehmanGHub/HES-WEB
+ * Website (org Pages): https://hassaneducationsystem.github.io/
+ * APK host (current Release): https://github.com/AbdulRehmanGHub/HES-WEB
  * Stable APK URL: .../releases/latest/download/hes.apk
  */
 export const GITHUB_OWNER = 'AbdulRehmanGHub'
@@ -15,7 +16,7 @@ export const CONTACT = {
   phone: '+923451027733',
 }
 
-/** Respect Vite `base` so assets work on GitHub Pages (/HES-WEB/) */
+/** Respect Vite `base` so assets work on GitHub Pages */
 const asset = (path: string) =>
   `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`
 
