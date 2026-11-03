@@ -26,7 +26,8 @@ function App() {
   }, [lang, isUrdu])
 
   useEffect(() => {
-    fetch(`${import.meta.env.BASE_URL}version.json`)
+    // no-store + timestamp: always read the latest version.json (never a cached copy)
+    fetch(`${import.meta.env.BASE_URL}version.json?t=${Date.now()}`, { cache: 'no-store' })
       .then((res) => (res.ok ? res.json() : null))
       .then((data: VersionInfo | null) => {
         if (data?.version) setVersion(data.version)
